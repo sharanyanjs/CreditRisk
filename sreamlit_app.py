@@ -261,7 +261,7 @@ def risk_assessment_page(df, model, scaler, explainer, features):
                     st.write("**Rationale:** Expected loss exceeds risk appetite threshold")
                 else:
                     st.success(f"**Recommendation:** Approve with {'standard' if risk_category == 'Low' else 'adjusted'} terms")
-                    st.write(f"**Pricing Suggestion:** Base rate + {max(0, (proba-0.3)*200):.0f} bps"
+                    st.write(f"**Pricing Suggestion:** Base rate + {max(0, (proba-0.3)*200):.0f} bps")
                 
                 st.write("**Cross-Sell Opportunities:**")
                 if duration > 36 and risk_category != "High":
