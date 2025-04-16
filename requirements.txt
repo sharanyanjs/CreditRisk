@@ -4,9 +4,14 @@ numpy==1.24.3
 matplotlib==3.7.2
 seaborn==0.12.2
 scikit-learn==1.3.0
+imbalanced-learn==0.10.1
+scipy==1.10.1
+joblib==1.3.2
 plotly==5.15.0
 shap==0.42.1
-imbalanced-learn==0.10.1
 pyarrow==12.0.1
 streamlit-aggrid==0.3.4.post3
 streamlit-extras==0.2.7
+# Optional model libraries:
+# xgboost==1.7.6
+# lightgbm==4.0.0
