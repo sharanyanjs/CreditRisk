@@ -59,7 +59,7 @@ def load_data():
         # Handle class imbalance
         if df['Risk'].mean() < 0.2:
             smote = SMOTE(random_state=42)
-            X_res, y_res = smote.fit_resample(df.drop('Risk', axis=1), df['Risk']
+            X_res, y_res = smote.fit_resample(df.drop('Risk', axis=1), df['Risk'])
             df = pd.concat([X_res, y_res], axis=1)
         
         return df.dropna().reset_index(drop=True)
